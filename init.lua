@@ -428,6 +428,7 @@
     end,
   })
 
+--[[
 --ABMS
   minetest.register_abm({ --particles
     nodenames = {'bees:hive_artificial', 'bees:hive_wild', 'bees:hive_industrial'},
@@ -445,7 +446,6 @@
       })
     end,
   })
-
   minetest.register_abm({ --spawn abm. This should be changed to a more realistic type of spawning
     nodenames = {'group:leaves'},
     neighbors = {''},
@@ -459,7 +459,8 @@
       end
     end,
   })
-
+]]
+--[[
   minetest.register_abm({ --spawning bees around bee hive
     nodenames = {'bees:hive_wild', 'bees:hive_artificial', 'bees:hive_industrial'},
     neighbors = {'group:flowers', 'group:leaves'},
@@ -472,7 +473,6 @@
       end
     end,
   })
-
   minetest.register_abm({ --remove bees
     nodenames = {'bees:bees'},
     interval = 30,
@@ -481,7 +481,7 @@
       minetest.remove_node(pos)
     end,
   })
-
+]]
 --ITEMS
   minetest.register_craftitem('bees:frame_empty', {
     description = 'empty hive frame',
