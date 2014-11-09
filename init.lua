@@ -87,7 +87,7 @@
         inv:remove_item('frames_filled','bees:frame_full')
         local p = {x=pos.x+math.random()-0.5, y=pos.y+math.random()-0.5, z=pos.z+math.random()-0.5}
         --wax flying all over the place
-        minetest.add_particle({
+  --[[      minetest.add_particle({
           pos = {x=pos.x, y=pos.y, z=pos.z},
           vel = {x=math.random(-4,4),y=math.random(8),z=math.random(-4,4)},
           acc = {x=0,y=-6,z=0},
@@ -95,7 +95,7 @@
           size = math.random(1,3),
           collisiondetection = false,
           texture = 'bees_wax_particle.png',
-        })
+        })]]
         local timer = minetest.get_node_timer(pos)
         timer:start(5)
       else
