@@ -459,7 +459,7 @@
       end
     end,
   })
-]]
+
 --[[
   minetest.register_abm({ --spawning bees around bee hive
     nodenames = {'bees:hive_wild', 'bees:hive_artificial', 'bees:hive_industrial'},
