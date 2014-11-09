@@ -445,7 +445,7 @@
         texture = 'bees_particle_bee.png',
       })
     end,
-  })
+  }) ]]
   minetest.register_abm({ --spawn abm. This should be changed to a more realistic type of spawning
     nodenames = {'group:leaves'},
     neighbors = {''},
