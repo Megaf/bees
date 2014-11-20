@@ -793,4 +793,4 @@
       })
     end
 
-print('[Mod]Bees Loaded!')
+print('[bees] loaded.')
